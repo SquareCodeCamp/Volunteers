@@ -1,10 +1,23 @@
+<!-- Search box -->
+<div>
+	<form method="GET">
+		Search for volunteer opportunities by tag (cause):
+		<input type="text" name="search" value="<%=params[:search]%>">
+		<input type="submit">
+	</form>
+</div>
+</br>
+
 
 <% @events.each do |event| %>
 	Event: <%= event.title %> </br>
 	Description: <%= event.description %> </br>
+
 	
-	<% #orgUrl = event.Organization.url %>
-	Organization: <%= event.organization_id %> </br>
+	Organization: <%= event.organization.name %> </br>
+	<% if event.organization.url %>
+		Website: <%= link_to event.organization.url, "http://#{event.organization.url}" %></br>
+	<% end %>
 	</br>
 <% end %>
 

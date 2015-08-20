@@ -3,8 +3,12 @@ class EventsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    @events = Event.all # load all events into instance var
-    #render json: @events.to_json
+    if params[:search].present? 
+    	search_condition = "%" + params[:search] + "%"
+    	@events = Event.where("organizations.tag LIKE :query OR organizations.name LIKE :query OR title LIKE :query", query: search_condition).joins(:organization)
+    else
+    	@events = Event.all
+    end
   end
 
   def create
