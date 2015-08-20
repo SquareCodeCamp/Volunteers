@@ -2,6 +2,9 @@
 <% @events.each do |event| %>
 	Event: <%= event.title %> </br>
 	Description: <%= event.description %> </br>
+	
+	<% #orgUrl = event.Organization.url %>
+	Organization: <%= event.organization_id %> </br>
 	</br>
 <% end %>
 
