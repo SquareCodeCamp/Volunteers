@@ -1,0 +1,251 @@
+// Colors
+// ==================================
+
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+
+$color-off-white: rgb(250, 250, 250);
+$color-off-white-2: rgb(248, 248, 248);
+
+$color-base: rgb(61, 69, 77);
+$color-base-dark: rgb(43, 51, 59);
+
+$color-medium: rgb(133, 137, 140);
+$color-medium-dark: rgb(115, 119, 122);
+
+$color-light: rgb(194, 199, 204);
+$color-light-dark: rgb(176, 181, 186);
+
+$color-ultra-light: rgb(242, 244, 245);
+$color-ultra-light-dark: rgb(224, 226, 227);
+
+$color-blue-dark: rgb(23, 132, 186);
+$color-blue-medium: rgb(41, 150, 204);
+$color-blue-light: rgb(59, 168, 222);
+$color-blue-lighter: rgb(223, 239, 247);
+$color-blue-lightest: rgb(247, 252, 255);
+
+$color-blue-premium: rgb(135, 180, 203);
+$color-blue-premium-light: rgb(140, 187, 211);
+
+$color-green-dark: rgb(56, 161, 0);
+$color-green: rgb(74, 179, 0);
+$color-green-light: rgb(92, 197, 18);
+$color-green-lighter: rgb(247, 252, 243);
+
+$color-red-dark: rgb(211, 22, 5);
+$color-red: rgb(229, 40, 23);
+$color-red-light: rgb(247, 58, 41);
+$color-red-lightest: rgb(254, 244, 243);
+
+$color-gold: rgb(229, 184, 0);
+$color-gold-light: rgb(255, 252, 242);
+$color-gold-dark: rgb(167, 163, 138);
+
+$color-shadow: rgba(0, 0, 0, 0.15);
+
+// Global & Shared Variable Values
+// ====================================
+$bridgeport-font-size: 14px;
+$bridgeport-line-height: 1;
+$bridgeport-border-radius: 3px;
+
+// Z-Indices
+// ------------------------------------
+$navbar-mobile-z-index: 100;
+$not-loading-z-index: -100;
+$two-column-secondary-z-index: 100;
+$two-column-toolbar-z-index: 99;
+$two-column-flash-message-z-index: 99;
+$two-column-secondary-flash-message-z-index: $two-column-flash-message-z-index - 1;
+$info-pane-info-z-index: 100;
+$info-pane-toolbar-z-index: 99;
+$info-pane-flash-message-z-index: 99;
+$pane-z-index: 100;
+$loading-z-index: 500;
+$popover-z-index: 600;
+$notification-z-index: 700;
+$modal-z-index: 800;
+$null-state-z-index: 1;
+$rewards-overlay-z-index: 2;
+
+// Modal/Popover Curtains
+// ------------------------------------
+$bridgeport-curtain-opacity: 0.6;
+$nav-mobile-curtain-opacity: $bridgeport-curtain-opacity;
+$modal-curtain-opacity: $bridgeport-curtain-opacity;
+
+// Selectable (List Items & Tables)
+// ------------------------------------
+$selectable-item-hover-border: 1px solid $color-blue-lighter;
+$selectable-item-hover-background: $color-blue-lighter;
+$selectable-item-is-active-border: 1px solid $color-blue-medium;
+$selectable-item-is-active-background-color: $color-blue-medium;
+
+// Module Configuration Variables
+// ====================================
+
+// Flash
+// ------------------------------------
+$flash-warning-color: #5c501e;
+$flash-warning-background-color: #f2c052;
+$flash-warning-gradient-start: $flash-warning-background-color;
+$flash-warning-gradient-end: #f7c454;
+
+// Sidebar
+// ------------------------------------
+$sidebar-item-border-radius: $bridgeport-border-radius;
+$sidebar-item-is-active-border: $selectable-item-is-active-border;
+$sidebar-item-is-active-background-color: $selectable-item-is-active-background-color;
+$sidebar-color: $color-medium;
+$sidebar-item-hover-color: $color-medium-dark;
+
+// Table
+// ------------------------------------
+$table-row-outer-padding: 25px;
+$table-row-hover-border: $selectable-item-hover-border;
+$table-row-hover-background: $selectable-item-hover-background;
+$table-row-is-active-border: $selectable-item-is-active-border;
+$table-row-is-active-background-color: $selectable-item-is-active-background-color;
+$table-header-background-color: $color-ultra-light;
+
+// Typography
+// ------------------------------------
+$type-font-size: $bridgeport-font-size;
+$type-line-height: $bridgeport-line-height;
+$type-color: $color-base;
+$type-font-family: "SqMarket", "helvetica neue", helvetica, arial, sans-serif;
+$type-heading-1-size: 25px;
+
+// Prose/Paragraph
+// ------------------------------------
+$prose-line-height: 1.4;
+
+// Form Elements
+// ------------------------------------
+$form-el-height: 32px;
+$form-el-border-size: 1px;
+$form-el-border-color: $color-light;
+$form-el-border-color-focus: $color-blue-light;
+$form-el-font-size: $bridgeport-font-size;
+$form-el-border-radius: 3px;
+
+// Input
+// ------------------------------------
+$input-color: $type-color;
+$input-placeholder-color: $color-light-dark;
+$input-height: 40px;
+$input-multi-line-line-height: $prose-line-height;
+$input-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+$input-disabled-opacity: 0.5;
+
+$legend-font-size: 13px;
+$legend-color: $color-base;
+$legend-letter-spacing: 1px;
+$legend-bottom-padding: 20px;
+$form-field-margin: 12px;
+
+// Nav
+// ------------------------------------
+$navbar-primary-font-size: 13px;
+$navbar-secondary-font-size: $bridgeport-font-size;
+$navbar-primary-height: 72px;
+$navbar-primary-height-mobile: 50px;
+$navbar-primary-background-color: $color-base-dark;
+$navbar-secondary-height: 51px;
+$navbar-secondary-background-color: $color-base;
+$navbar-toolbar-height: 68px;
+$navbar-background-toolbar: $color-ultra-light;
+
+// Account Menu
+// ------------------------------------
+$account-menu-n-padding: 13px;
+$account-menu-e-padding: 10px;
+$account-menu-s-padding: 13px;
+$account-menu-w-padding: 24px;
+
+// Actions
+// ------------------------------------
+$action-transition-duration-in: 0.2s;
+$action-transition-duration-out: 0.05s;
+$action-transition-timing: ease-in-out;
+$action-transition-list: background-color $action-transition-duration-in $action-transition-timing, color $action-transition-duration-in $action-transition-timing, opacity $action-transition-duration-in $action-transition-timing;
+
+// Button
+// ------------------------------------
+$button-height: $form-el-height;
+$button-radius: $bridgeport-border-radius;
+$button-box-shadow: rgba(0, 0, 0, 0.04) 0 1px 0;
+$button-border-size: $form-el-border-size;
+$button-is-hovered-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px;
+
+$button-dark-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 0;
+$button-dark-is-hovered-box-shadow: rgba(0, 0, 0, 0.16) 0 1px 1px;
+
+$button-transition-duration-in: $action-transition-duration-in;
+$button-transition-duration-out: $action-transition-duration-out;
+$button-transition-timing: $action-transition-timing;
+$button-transition-list: $action-transition-list;
+
+$button-tall-height: $input-height;
+
+// Popover
+// ------------------------------------
+$popover-width: 140px;
+$popover-border-color: $form-el-border-color;
+$popover-list-item-v-padding: 13px;
+$popover-list-item-h-padding: 10px;
+$popover-list-item-padding: $popover-list-item-v-padding $popover-list-item-h-padding;
+
+// Flash Message
+// ------------------------------------
+$flash-message-font-size: $bridgeport-font-size;
+$flash-message-info-sprite: "sprites/icon/alert_info.png";
+$flash-message-info-sprite-height: image-height($flash-message-info-sprite);
+$flash-message-success-sprite: "sprites/icon/alert_checkmark.png";
+$flash-message-success-sprite-height: image-height($flash-message-success-sprite);
+$flash-message-warning-sprite: "sprites/icon/alert_warning.png";
+$flash-message-warning-sprite-height: image-height($flash-message-warning-sprite);
+$flash-message-transition-duration: 0.2s;
+
+// Invoices - Line Item
+// ------------------------------------
+$invoice-line-item-height: $input-height;
+$invoice-line-item-font-size: $bridgeport-font-size;
+$invoice-line-item-delete-sprite: "sprites/icon/remove_item.png";
+
+// Container
+// ------------------------------------
+$l-content-padding-top: 35px;
+$l-chrome-transactions: 196px;
+$layout-padding-horizontal: 40px;
+$layout-padding-horizontal-mobile: 20px;
+
+// Checkbox
+// ------------------------------------
+$checkbox-size: 14px;
+
+// Toggle
+// ------------------------------------
+$toggle-off-color: $color-light;
+$toggle-width: 32px;
+
+// Summary Chart
+// ------------------------------------
+$summary-chart-background: $color-ultra-light;
+$summary-chart-foreground-fill: $color-blue-medium;
+$summary-chart-tip-background-color: $color-green;
+$summary-chart-tip-color: $color-white;
+$summary-chart-tip-border-color: $color-white;
+
+// Widgets
+// ------------------------------------
+$widget-pie-chart-line-color: rgba(0, 0, 0, 0.8);
+$widget-pie-chart-line-width: 1.5;
+$widget-pie-chart-line-dash: 5, 4;
+
+// Box
+// ------------------------------------
+$box-border-radius: 2px;
+$box-backgound-color: $color-white;
+$box-border: $form-el-border-size solid $form-el-border-color;
