@@ -17,6 +17,10 @@
 @import "sq-bootstrap-sprockets";
 @import "sq-bootstrap";
 
+.navbar {
+  z-index: 99;
+}
+
 .cover {
   position: absolute;
   top: 0;
@@ -30,11 +34,19 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -1;
 }
 
 .title {
   margin-top: 30%;
   margin-left: 5%;
   color: white;
+}
+
+.search {
+  margin-top: 55%;
+  position: relative;
+  text-align: center;
+  input {
+    width: 50%;
+  }
 }

@@ -1,34 +1,25 @@
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand navbar-brand-square">
-        <i class="sq-icon sq-icon-brand"></i>
-      </a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Events</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
+<div class="cover">
+  <div class="title">
+    <h1>Volunteering@Square</h1>
+    <p class="lead">Inherent in our mission is the desire to make things easier for those in our community.</p>
   </div>
-</nav>
+</div>
 
-<div class="container">
+<!-- Search box -->
+<div class="search">
+	<form method="GET">
+    <input type="text" class="input" placeholder="Search" name="search" value="<%=params[:search]%>">
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>
+</br>
 
-  <div class="starter-template">
-    <div class="cover">
-      <div class="title">
-        <h1>Volunteering@Square</h1>
-        <p class="lead">Inherent in our mission is the desire to make things easier for those in our community.</p>
-      </div>
-    </div>
-  </div>
-</div><!-- /.container -->
+<% @events.each do |event| %>
+	Event: <%= event.title %> </br>
+	Description: <%= event.description %> </br>	
+	Organization: <%= event.organization.name %> </br>
+	<% if event.organization.url %>
+		Website: <%= link_to event.organization.url, "http://#{event.organization.url}" %></br>
+	<% end %>
+	</br>
+<% end %>
