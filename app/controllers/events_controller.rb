@@ -3,8 +3,8 @@ class EventsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    @events = Event.all # load all events into instance var
-    render json: @events.to_json
+    # @events = Event.all # load all events into instance var
+    # render json: @events.to_json
   end
 
   def create

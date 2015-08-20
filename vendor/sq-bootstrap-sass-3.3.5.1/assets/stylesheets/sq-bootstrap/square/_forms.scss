@@ -1,0 +1,20 @@
+input {
+  outline: none !important;
+}
+
+legend {
+  font-weight: 500;
+  border-bottom: none;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  transition: none;
+  box-shadow: none !important;
+}
+
+textarea {
+  resize: vertical;
+}

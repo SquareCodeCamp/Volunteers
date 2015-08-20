@@ -23,7 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Square stylesheets
-gem 'bootstrap-square', path: "vendor/gems/bootstrap-square"
+gem 'sass'
+gem 'sq-bootstrap-sass', path: "vendor/gems/sq-bootstrap-sass"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

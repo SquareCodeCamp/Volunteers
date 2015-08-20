@@ -1,0 +1,17 @@
+.navbar-header > a.navbar-brand {
+  text-transform: uppercase;
+  font-weight: $navbar-default-font-weight;
+  letter-spacing: 1px;
+}
+
+.nav.navbar-nav > li > a {
+  text-transform: uppercase;
+  font-weight: $navbar-default-font-weight;
+  font-size: $navbar-default-font-size;
+  letter-spacing: 1px;
+}
+
+.navbar-brand-square {
+  padding: 20px 15px;
+  font-size: 32px;
+}

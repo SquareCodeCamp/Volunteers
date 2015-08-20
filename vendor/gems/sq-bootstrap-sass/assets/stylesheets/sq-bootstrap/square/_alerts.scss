@@ -1,0 +1,13 @@
+.alert {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  i { margin-right: 10px; }
+
+  .close {
+    right: 0px;
+    color: white;
+    opacity: 0.5;
+    &:hover { opacity: 0.8; }
+  }
+}
