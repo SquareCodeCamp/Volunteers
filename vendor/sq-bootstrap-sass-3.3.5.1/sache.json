@@ -1,0 +1,5 @@
+{
+    "name": "sq-bootstrap-sass",
+    "description": "sq-bootstrap-sass is a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications",
+    "tags": ["bootstrap", "sq-bootstrap", "grid", "typography", "buttons", "ui", "responsive-web-design"]
+}

@@ -1,0 +1,24 @@
+.table {
+  > thead {
+    background-color: $table-head-bg;
+    > tr {
+      > th {
+        border-top: 1px solid $table-border-color !important;
+        border-width: 1px;
+        color: $table-head-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.active,
+  > th.active,
+  &.active > td,
+  &.active > th {
+    color: $table-color-active;
+  }
+}

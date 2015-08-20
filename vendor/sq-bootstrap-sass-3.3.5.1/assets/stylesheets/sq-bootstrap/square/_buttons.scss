@@ -1,0 +1,67 @@
+// Alternate buttons
+// --------------------------------------------------
+
+@mixin button-active-overrides($background, $border) {
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active {
+    background-color: $background;
+    border-color: $border;
+    box-shadow: none;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-color: $background;
+    border-color: $border;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+      border-color: $border;
+      box-shadow: none;
+    }
+  }
+}
+
+.btn {
+  outline: none !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+  &:hover {
+    transition-duration: 0.05s;
+  }
+}
+
+.btn-default {
+  @include button-active-overrides($color-white, $btn-default-border);
+}
+
+// Primary appears as blue
+.btn-primary {
+  @include button-active-overrides($color-blue-light, $btn-primary-border);
+}
+
+// Success appears as green
+.btn-success {
+  @include button-active-overrides($color-green-light, $btn-success-border);
+}
+
+// Info appears as teal
+.btn-info {
+  @include button-active-overrides(lighten($btn-info-bg, 5%), $btn-info-border);
+}
+
+// Warning appears as gold
+.btn-warning {
+  @include button-active-overrides(lighten($btn-warning-bg, 5%), $btn-warning-border);
+}
+
+// Danger and error appear as red
+.btn-danger {
+  @include button-active-overrides(lighten($color-red-light, 5%), $btn-danger-border);
+}

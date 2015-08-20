@@ -1,0 +1,4 @@
+module SqBootstrap
+  VERSION       = '3.3.5.1'
+  BOOTSTRAP_SHA = '24102c200378d437cd5181578b188111367c6c87'
+end

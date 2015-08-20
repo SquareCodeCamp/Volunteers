@@ -1,0 +1,47 @@
+.popover.fade.right {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+
+  &.in {
+    opacity: 1;
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+.popover.fade.left {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+
+  &.in {
+    opacity: 1;
+    transform: translate3d(-5px, 0, 0);
+  }
+}
+
+.popover.fade.top {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+
+  &.in {
+    opacity: 1;
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+.popover.fade.bottom {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+
+  &.in {
+    opacity: 1;
+    transform: translate3d(0, 5px, 0);
+  }
+}

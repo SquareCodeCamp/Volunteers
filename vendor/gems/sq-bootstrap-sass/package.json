@@ -1,0 +1,29 @@
+{
+  "name": "sq-bootstrap-sass",
+  "version": "3.3.5",
+  "description": "sq-bootstrap-sass is a Sass-powered version of Bootstrap for Square, ready to drop right into your Sass powered applications.",
+  "main": "assets/javascripts/sq-bootstrap.js",
+  "repository": {
+    "type": "git",
+    "url": "https://stash.corp.squareup.com/scm/sq/sq-bootstrap-sass"
+  },
+  "keywords": [
+    "bootstrap",
+    "sq-bootstrap",
+    "sass",
+    "css"
+  ],
+  "contributors": [
+    "Thomas McDonald",
+    "Tristan Harward",
+    "Peter Gumeson",
+    "Gleb Mazovetskiy",
+    "Rick Song"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "~2.0",
+    "mincer": "~1.2",
+    "ejs": "~1.0"
+  }
+}

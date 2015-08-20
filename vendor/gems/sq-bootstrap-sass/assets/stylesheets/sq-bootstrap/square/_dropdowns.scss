@@ -1,0 +1,71 @@
+.dropdown-menu {
+  display: block;
+  padding: 0px;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: visibility 0.3s linear, opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+
+  li {
+    &:first-of-type:before {
+      position: absolute;
+      top: -6px;
+      left: 15px;
+      margin-left: -5px;
+      transform: rotate(45deg);
+
+      display: block;
+      width: 10px;
+      height: 10px;
+
+      border-top: solid 1px $gray-light;
+      border-left: solid 1px $gray-light;
+      z-index: -1;
+      background-color: $color-white;
+      content: "";
+    }
+
+    & > a {
+      padding: 13px 10px;
+    }
+  }
+
+  &.dropdown-menu-right li:first-of-type:before {
+    left: inherit;
+    right: 15px;
+  }
+}
+
+.open > .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 10px, 0);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275);
+}
+
+.dropup > .dropdown-menu {
+  li:first-of-type:before {
+    top: inherit;
+    bottom: -6px;
+    transform: rotate(-135deg);
+  }
+}
+
+.dropup.open > .dropdown-menu {
+  transform: translate3d(0, -10px, 0);
+}
+
+.nav {
+  &.nav-pills .dropdown .dropdown-menu {
+    top: 30px;
+  }
+  &.navbar-nav .dropdown .dropdown-menu {
+    left: 15px;
+    top: 50px;
+  }
+}
+
+.dropdown-menu .divider {
+  margin: 0;
+}

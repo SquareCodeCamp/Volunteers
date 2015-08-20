@@ -1,0 +1,119 @@
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin.ttf')) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-thin-italic.ttf')) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-light.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-light.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-light.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-light.ttf')) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-light-italic.ttf')) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular.ttf')) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-regular-italic.ttf')) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium.ttf')) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-medium-italic.ttf')) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold.ttf')) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'SqMarket';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.eot'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.eot?#iefix'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.eot?#iefix')) format('embedded-opentype'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.woff'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.woff')) format('woff'),
+      url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.ttf'), '#{$sq-market-font-path}#{$sq-market-font-name}-bold-italic.ttf')) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+}
