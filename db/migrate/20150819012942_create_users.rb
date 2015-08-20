@@ -1,9 +1,7 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :username, {null: false}
-      t.text :interests
-      t.timestamps null: false
+      t.string :name, {null: false}
     end
   end
 end
