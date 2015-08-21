@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   def index
     if params[:search].present? 
     	search_condition = "%" + params[:search] + "%"
-    	@events = Event.where("organizations.tag LIKE :query OR organizations.name LIKE :query OR title LIKE :query", query: search_condition).joins(:organization)
+    	@events = Event.where("events.tags LIKE :query OR organizations.name LIKE :query OR title LIKE :query", query: search_condition).joins(:organization)
     else
     	@events = Event.all
     end
