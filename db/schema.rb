@@ -14,12 +14,13 @@
 ActiveRecord::Schema.define(version: 20150820012925) do
 
   create_table "events", force: :cascade do |t|
-    t.string   "title",           null: false
-    t.integer  "organization_id", null: false
+    t.string   "title",                                null: false
+    t.integer  "organization_id",                      null: false
     t.string   "location"
-    t.text     "description",     null: false
-    t.datetime "start_time",      null: false
-    t.datetime "end_time",        null: false
+    t.text     "description",                          null: false
+    t.datetime "start_time",                           null: false
+    t.datetime "end_time",                             null: false
+    t.string   "tags",            default: "--- []\n"
   end
 
   create_table "events_users", force: :cascade do |t|
