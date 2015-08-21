@@ -18,6 +18,12 @@ class EventsController < ApplicationController
     respond_with @event, location: events_url
   end
 
+  def signup
+    # append event to current user
+    current_user.events << Event.find(params[:id])
+
+  end
+
   def destroy
   end
 
