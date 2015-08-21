@@ -16,3 +16,37 @@
 
 @import "sq-bootstrap-sprockets";
 @import "sq-bootstrap";
+
+.navbar {
+  z-index: 99;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(square.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+  margin-top: 30%;
+  margin-left: 5%;
+  color: white;
+}
+
+.search {
+  margin-top: 55%;
+  position: relative;
+  text-align: center;
+  input {
+    width: 50%;
+  }
+}

@@ -1,23 +1,25 @@
+<div class="cover">
+  <div class="title">
+    <h1>Volunteering@Square</h1>
+    <p class="lead">Inherent in our mission is the desire to make things easier for those in our community.</p>
+  </div>
+</div>
+
 <!-- Search box -->
-<div>
+<div class="search">
 	<form method="GET">
-		Search for volunteer opportunities by tag (cause):
-		<input type="text" name="search" value="<%=params[:search]%>">
-		<input type="submit">
+    <input type="text" class="input" placeholder="Search" name="search" value="<%=params[:search]%>">
+		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 </div>
 </br>
 
-
 <% @events.each do |event| %>
 	Event: <%= event.title %> </br>
-	Description: <%= event.description %> </br>
-
-	
+	Description: <%= event.description %> </br>	
 	Organization: <%= event.organization.name %> </br>
 	<% if event.organization.url %>
 		Website: <%= link_to event.organization.url, "http://#{event.organization.url}" %></br>
 	<% end %>
 	</br>
 <% end %>
-
