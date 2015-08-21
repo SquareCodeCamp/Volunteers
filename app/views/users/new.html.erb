@@ -1,15 +1,18 @@
 <!-- Sign up page -->
-
-<%= form_for @user do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %><br />
-	<%= f.label :email %>
-	<%= f.text_field :email %><br />
-	<%= f.label :password %>
-	<%= f.password_field :password %><br />
-	<%= f.submit %>
-<% end %>
-
+<div class="register">
+	<div class="register-form">
+		<h2>Register</h2><br>	
+		<%= form_for @user do |f| %>
+			<%= f.label :name %><br>
+			<%= f.text_field :name %><br><br>
+			<%= f.label :email %><br>
+			<%= f.text_field :email %><br><br>
+			<%= f.label :password %><br>
+			<%= f.password_field :password %><br><br>
+			<%= f.submit 'Submit', :class => "btn btn-success" %>
+		<% end %>
+	</div>
+</div>
 
 <!-- <form action="/users" method="post">
 	<p><input type="text" name="user[name]" placeholder="Name" /></p>
