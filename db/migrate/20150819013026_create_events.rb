@@ -6,6 +6,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :location
       t.text :description, null: false
       t.datetime :start_time, :end_time, null: false 
+      t.string :tags, array: true, default: []
     end
   end
 end
