@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.create(user_params)
 		# @user = user.new(user_params)
-		respond_with @user, location: root_url
+		respond_with @user, location: login_url
 	end
 
 private
