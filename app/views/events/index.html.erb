@@ -25,7 +25,12 @@
                         <h6><%= event.organization.name %></h6>
                     <% end %>
                     <h3><%= event.title %></h3>
-                    <%= event.description %><br><br>
+                    <%= event.description %><br/>
+                    Tags: 
+                    <% event.tags.each do |tag| %>
+                        #<%= tag %>   
+                    <% end %>
+                    <br/><br/>
                     <% if current_user and current_user.events.include?(event) %>
                         <%= button_to "Registered", signup_event_url(event), class: "btn btn-success", method: "POST" %>    
                     <% else %>
