@@ -21,7 +21,7 @@ class EventsController < ApplicationController
   def signup
     # append event to current user
     current_user.events << Event.find(params[:id])
-
+    redirect_to root_url
   end
 
   def destroy
