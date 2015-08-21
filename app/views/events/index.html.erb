@@ -9,22 +9,26 @@
 <div class="search">
     <form method="GET">
     <input type="text" class="input" placeholder="Search" name="search" value="<%=params[:search]%>">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-success">GO</button>
     </form>
 </div>
 </br>
 
 <div class="events">
-    <% @events.each do |event| %>
-        <div class="event">
-            <% if event.organization.url %>
-                <h6><a href="<%= event.organization.url %>"><%= event.organization.name %></a></h6>
-            <% else %>
-                <h6><%= event.organization.name %></h6>
-            <% end %>
-            <h4><%= event.title %></h4>
-            <%= event.description %><br><br>
-            <input class="btn btn-primary" type="button" value="Volunteer">
-        </div>
-    <% end %>
+    <table class="table">
+        <% @events.each do |event| %>
+            <tr class="event">
+                <td>
+                    <% if event.organization.url %>
+                        <h6><a href="<%= event.organization.url %>"><%= event.organization.name %></a></h6>
+                    <% else %>
+                        <h6><%= event.organization.name %></h6>
+                    <% end %>
+                    <h3><%= event.title %></h3>
+                    <%= event.description %><br><br>
+                    <input class="btn btn-primary" type="button" value="Volunteer"><br><br>
+                </td>
+            </tr>
+        <% end %>
+    </table>
 </div>
