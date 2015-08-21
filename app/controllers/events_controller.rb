@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  respond_to :json, :html
   
   skip_before_action :verify_authenticity_token
 
@@ -9,10 +10,12 @@ class EventsController < ApplicationController
     else
     	@events = Event.all
     end
+    respond_with @events 
   end
 
   def create
-  	event = Event.create(event_params)
+  	@event = Event.create(event_params)
+    respond_with @event, location: events_url
   end
 
   def destroy
@@ -24,7 +27,7 @@ class EventsController < ApplicationController
 private
 
   def event_params
-      params.require(:event).permit(:title, :location, :start_time, :end_time, :description)
+      params.require(:event).permit(:title, :location, :start_time, :end_time, :description, :organization_id)
   end
 
 end
