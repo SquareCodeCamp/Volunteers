@@ -3,7 +3,7 @@ require "digest"
 class User < ActiveRecord::Base
 	has_and_belongs_to_many :events
 
-	attr_accessor :password
+	attr_accessor :password # create password getter and setter
 	before_save :encrypt_password
 
 	def encrypt_password
